@@ -2,7 +2,7 @@
 set timeout -1
 spawn ./Config
 expect "In what directory should Anope be installed?" 
-send "/home/unreal/Unreal$env(UNREAL_VERSION)/services\r"
+send "/home/unreal/unrealircd/services\r"
 
 expect "does not exist.  Create it?"
 send "y\r"
@@ -16,6 +16,17 @@ send "007\r"
 expect "Would you like to build a debug version of Anope?"
 send "n\r" 
 
+expect "Do you want to build using precompiled headers?"
+send "n\r"
+
+expect "Are there any extra include directories you wish to use?"
+send "NONE\r"
+
+expect "Are there any extra library directories you wish to use?"
+send "NONE\r"
+
+expect "Are there any extra arguments you wish to pass to CMake?"
+send "NONE\r"
 
 expect "Would you like to utilize run-cc.pl?"
 send "n\r" 

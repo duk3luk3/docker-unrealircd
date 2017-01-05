@@ -1,0 +1,4 @@
+secrets.sh
+config.settings
+.gitattributes
+server.*.pem

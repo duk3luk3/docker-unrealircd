@@ -1,5 +1,5 @@
-export UNREAL_VERSION="3.2.10.5"
-export ANOPE_VERSION="2.0.2"
-export MOTD="Message of the Day"
+export UNREAL_VERSION="4.0.1"
+export ANOPE_VERSION="2.0.3"
+export MOTD="Welcome to Forged Alliance Forever chat"
 export RULES=""
 export TERM="vt100"
