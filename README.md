@@ -1,7 +1,7 @@
-unrealircd-3.2
+unrealircd for FAF
 ==============
 
-UnrealIRCD with Anope Services
+UnrealIRCD with Anope Services based on dockerimages/docker-unrealircd
 
 # preparation
 
@@ -25,7 +25,16 @@ To create secret strings, use e.g.
 
 Copy `config.settings.sample` to `config.settings` and adjust.
 
+# build
+
+    docker build -t unrealirc
+
 # usage
 
-    docker run dockerimages/docker-unrealircd
-  
+Test/Inspection:
+
+    docker run -ti unrealirc /bin/bash
+
+Production:
+
+    docker run unrealirc
