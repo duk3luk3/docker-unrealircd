@@ -8,7 +8,7 @@ ENV TERM="vt100"
 RUN apt-get update \
  && apt-get upgrade -y \
  && apt-get install -y \
- wget build-essential curl cmake file expect libssl-dev
+ wget build-essential curl cmake file expect libssl-dev libmysqlclient-dev mysql-client-5.6
 RUN groupadd -r unreal && useradd -r -g unreal unreal
 RUN mkdir -p /home/unreal
 RUN chown unreal:unreal /home/unreal
