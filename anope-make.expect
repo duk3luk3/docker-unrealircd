@@ -41,10 +41,6 @@ send "NONE\r"
 expect "If you need no extra library directories, enter NONE in all caps."
 send "NONE\r"
 
-
-expect "If you need no extra arugments to CMake, enter NONE in all caps."
-send "NONE\r"
-
 # Saving configuration results in config.cache... done.
 
 
