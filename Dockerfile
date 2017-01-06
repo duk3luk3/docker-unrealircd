@@ -23,6 +23,7 @@ COPY deploy-anope /usr/bin/deploy-anope
 USER root
 RUN chmod +x /usr/bin/deploy-unrealirc
 RUN chmod +x /usr/bin/deploy-anope
+RUN chmod +x /home/unreal/secrets.sh
 USER unreal
 
 RUN wget https://www.unrealircd.org/unrealircd4/unrealircd-4.0.1.tar.gz
