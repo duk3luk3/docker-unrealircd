@@ -887,10 +887,10 @@ opertype
  * As with all permissions, make sure to only give trustworthy people access to Services.
  */
 
-#oper
+oper
 {
 	/* The nickname of this services oper */
-	#name = "nick1"
+	name = "%SECRET_OPER_NAME%"
 
 	/* The opertype this person will have */
 	type = "Services Root"
